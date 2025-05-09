@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Club Name</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script defer src="js/script.js"></script>
 </head>
 
 <body>
-    <div>
-        <header>
-            <div class="border">
-                <!--Insert an image here-->
-            </div>
-
-            <div class="container">
-                <nav>
-                    <li>
-                        <a href="index.html"> HOME</a>
-                    </li>
-                    <li>
-                        <a href = "board.html"> OUR TEAM</a>
-                    </li>
-                    <li>
-                        <a href = "events.html"> EVENTS</a>
-                    </li>
-                    <li>
-                        <a href = "sponsorship.html"> SPONSORSHIP</a>
-                    </li>
-                    <li>
-                        <a href = "resources.html"> RESOURCES</a>
-                    </li>
-                </nav>
-            </div>
-        </header>
-
+  <header>
+    <div class="logo">
+      <!-- <img src="images/logos/ostem-logo2.png" alt="oSTEM logo" /> -->
     </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="board.html">OUR TEAM</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="sponsorship.html">SPONSORSHIP</a></li>
+        <li><a href="resources.html">RESOURCES</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section class="mission">
+      <h1>Our Mission</h1>
+      <p>We are committed to [insert mission here], creating an inclusive space where students can [goal/outcome].</p>
+    </section>
+
+    <section class="slideshow">
+      <img id="slide" src="assets/images/event1.jpg" alt="Club Event Photo" />
+    </section>
+  </main>
+
+  <footer>
+    <p>Connect with us:</p>
+    <a href="https://linktr.ee/yourclub" target="_blank"><img src="assets/logos/linktree.png" alt="Linktree" /></a>
+    <a href="https://discord.gg/yourclub" target="_blank"><img src="assets/logos/discord.png" alt="Discord" /></a>
+    <a href="https://instagram.com/yourclub" target="_blank"><img src="assets/logos/instagram.png" alt="Instagram" /></a>
+  </footer>
 </body>
+</html>
