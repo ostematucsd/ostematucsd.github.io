@@ -1,5 +1,59 @@
-.boardImages {
-    width: 200px;
-    height: 50px;
-    object-fit: contain;
-}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #222;
+    padding: 15px;
+    color: white;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .mission {
+    padding: 40px;
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  
+  .slideshow {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .slideshow img {
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer img {
+    width: 30px;
+    margin: 0 10px;
+  }
+  
