@@ -1,7 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Modern font */
     margin: 0;
     padding: 0;
+    background: linear-gradient(to right, #99b682, #c2a8d7); /* Customize gradient colors */
   }
   
   header {
@@ -24,7 +25,14 @@ body {
   nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
   }
+
+  nav ul li a:hover {
+    color: #ccd8c6; /* Hover effect */
+}
+
   
   .mission {
     padding: 40px;
@@ -52,8 +60,29 @@ body {
     padding: 20px;
   }
   
+  footer a {
+    color: white;
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ff6b6b; /* Hover effect */
+}
+
   footer img {
-    width: 30px;
+    width: 40px;
     margin: 0 10px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
   }
   
+  @media screen and (max-width: 768px) {
+    .fun-facts {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        text-align: center;
+    }
+}
