@@ -1,8 +1,12 @@
+
+
 body {
     font-family: 'Poppins', sans-serif; /* Modern font */
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #99b682, #c2a8d7); /* Customize gradient colors */
+    background-color: red
+}
+
   }
   
   header {
