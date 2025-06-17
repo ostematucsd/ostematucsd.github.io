@@ -1,10 +1,8 @@
-
-
 body {
     font-family: 'Poppins', sans-serif; /* Modern font */
     margin: 0;
     padding: 0;
-    background-color: red
+    background-color: linear-gradient(to right, #99b682, #c2a8d7);
 }
 
   }
