@@ -9,6 +9,10 @@ body {
     background-color: #ffffff;
     padding: 15px;
   }
+
+  headerLogo {
+   width: 20px; 
+  }
   
   nav ul {
     display: flex;
@@ -35,8 +39,14 @@ body {
   
   .mission {
     padding: 40px;
+    text-decoration-color:ffffff;
     text-align: center;
-    background-color: #cbcbcb;
+    background-image: "images/nationalConfBoard.JPG" alt="Club Event Photo";
+    background-position: center center; /* Center the image */
+    background-size: cover; /* Cover the container */
+    width: 700px; /* Example: set width and height */
+    height: 400px;
+
   }
   
   .slideshow {
@@ -85,6 +95,7 @@ footer a:hover {
         text-align: center;
     }
 }
+
 
 .team-grid {
   display: grid;
