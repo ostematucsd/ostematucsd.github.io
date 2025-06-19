@@ -39,15 +39,12 @@ body {
   
   .mission {
     padding: 40px;
-    text-decoration-color:ffffff;
     text-align: center;
-    background-image: "images/nationalConfBoard.JPG" alt="Club Event Photo";
-    background-position: center center; /* Center the image */
-    background-size: cover; /* Cover the container */
-    width: 700px; /* Example: set width and height */
-    height: 400px;
-
-  }
+    background-image: url("images/nationalConfBoard.JPG");
+    background-position: center center;
+    background-size: cover;
+    text-decoration-color: #ffffff; /* Add # for hex color */
+    }
   
   .slideshow {
     display: flex;
