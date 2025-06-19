@@ -6,7 +6,7 @@ body {
 }
   
   header {
-    background-color: #222;
+    background-color: #ffffff;
     padding: 15px;
   }
   
@@ -22,21 +22,21 @@ body {
   }
   
   nav ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
   }
 
   nav ul li a:hover {
-    color: #ccd8c6; /* Hover effect */
+    color: #3bb000; /* Hover effect */
 }
 
   
   .mission {
     padding: 40px;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #cbcbcb;
   }
   
   .slideshow {
@@ -54,7 +54,7 @@ body {
   
   footer {
     background-color: #222;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
   }
@@ -68,13 +68,13 @@ body {
 }
 
 footer a:hover {
-    color: #ff6b6b; /* Hover effect */
+    color: #3bb000; /* Hover effect */
 }
 
   footer img {
     width: 40px;
     margin: 0 10px;
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    transition: transform 0.3s ease; 
   }
   
   @media screen and (max-width: 768px) {
