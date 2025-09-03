@@ -1,263 +1,133 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    margin:;
-    padding: 0;
-    background: linear-gradient(to right, #99b682, #c2a8d7);
-}
-  
-  header {
-    background-color: #ffffff;
-    padding: 9px;
+:root{
+  --bg: #ffffff; --text:#0f172a; --muted:#475569;
+  --surface: rgba(255,255,255,.75); --ring:#e2e8f0; --shadow: 0 8px 24px rgba(2,6,23,.08);
+  --radius: 18px;
+  --grad: linear-gradient(135deg, #faf5ff, #ecfeff, #fff7ed);
+  /* brand accent for buttons */
+  --accent:#f59e0b; --accent-600:#d97706;
   }
-
-  #headerLogo {
-    height: 40px;
-    width: auto;
-    }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif;color:var(--text);background:var(--grad)}
+  img{max-width:100%;display:block}
   
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-  }
   
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-  }
+  /* Layout helpers */
+  .container{max-width:1100px;margin:0 auto;padding:0 16px}
+  .grid{display:grid;gap:24px}
+  .grid.two{grid-template-columns:1fr}
+  .grid.three{grid-template-columns:1fr}
+  @media(min-width:900px){.grid.two{grid-template-columns:1fr 1fr}.grid.three{grid-template-columns:repeat(3,1fr)}}
+  .flex{display:flex;gap:16px}
+  .between{justify-content:space-between}
+  .center-y{align-items:center}
+  .muted{color:var(--muted)}
+  .lead{color:var(--muted)}
 
-  nav ul li a:hover {
-    color: var(--ink);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
-
-  }
-  
-  /* Rainbow hover effects */
-  .nav-home:hover { color: #e63946; }/* red */
-  .nav-team:hover { color: #f77f00; }      /* orange */
-  .nav-events:hover { color:#f9c74f; }    /* yellow (dark text) */
-  .nav-sponsor:hover { color:#43aa8b; }   /* green */
-  .nav-resources:hover { color:#4361ee; } /* blue */
-  .nav-contact:hover { color: #9d4edd; }   /* purple */
-  
-
-  
-  .mission {
-    padding: 40px;
-    text-align: center;
-    background-image: url("images/nationalConfBoard.JPG");
-    background-position: center center;
-    background-size: cover;
-    text-decoration-color: #ffffff; /* Add # for hex color */
-    }
-  
-  .slideshow {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .slideshow img {
-    width: 80%;
-    max-width: 700px;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  footer {
-    background-color: #ffffff;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 20px;
-  }
-  
-  footer a {
-    color: white;
-    margin: 0 15px;
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: bold;
+/* Header & Nav */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--ring)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit}
+.brand-mark{width:36px;height:36px;object-fit:contain}
+.primary-nav{position:relative}
+.primary-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:18px}
+.primary-nav a{font-weight:700;text-decoration:none;color:var(--text)}
+.nav-toggle{display:none;background:none;border:0}
+.nav-toggle .bar{width:24px;height:2px;background:var(--text);display:block;margin:5px 0}
+/* Rainbow hover */
+.nav-home:hover{color:#ef4444}
+.nav-team:hover{color:#f97316}
+.nav-events:hover{color:#eab308}
+.nav-sponsor:hover{color:#22c55e}
+.nav-resources:hover{color:#3b82f6}
+.nav-contact:hover{color:#a855f7}
+@media(max-width:900px){
+  .nav-toggle{display:block}
+  .primary-nav ul{position:absolute;right:0;top:44px;background:#fff;border:1px solid var(--ring);border-radius:12px;box-shadow:var(--shadow);padding:10px 12px;flex-direction:column;min-width:220px;display:none}
+  .primary-nav ul.open{display:flex}
 }
 
-footer a:hover {
-    color: #3bb000; /* Hover effect */
-}
+/* Hero */
+.hero{padding:48px 0}
+.hero-grid{align-items:center}
+.tagline{color:#7c3aed;font-weight:700;margin-top:6px}
+.lead{margin-top:8px}
 
-  footer img {
-    width: 40px;
-    margin: 0 10px;
-    transition: transform 0.3s ease; 
-  }
-  
-  @media screen and (max-width: 768px) {
-    .fun-facts {
-        grid-template-columns: 1fr;
-    }
-    nav {
-        text-align: center;
-    }
-}
+/* Buttons */
+.btn{display:inline-block;padding:10px 14px;border-radius:999px;border:1px solid var(--ring);background:#fff;font-weight:800;color:var(--text);text-decoration:none}
+.btn:hover{box-shadow:var(--shadow)}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:#000}
+.btn-primary:hover{background:var(--accent-600);border-color:var(--accent-600)}
+.btn-small{padding:8px 10px;font-size:14px}
 
+/* Cards */
+.card{background:var(--surface);border:1px solid var(--ring);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+.cards .card{display:flex;flex-direction:column}
+.cards .btn{margin-top:auto}
+.section{padding:60px 0}
+.section-alt{background:rgba(255,255,255,.5)}
 
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-  padding: 40px;
-  justify-items: center;
-}
-
-.team-card {
-  background-color: white;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  max-width: 250px;
-  width: 100%;
-}
-
-.team-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-  max-width: 150px;
-  margin-bottom: 15px;
-}
-
-.team-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-
-
-.slider-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.slider {
-  width: 100%;
-  max-width: 600px;
-  height: 400px;
-  margin: 20px;
-  text-align: center;
-  border-radius: 20px;
-  overflow: hidden;
-  position: relative;
-}
-
-.slides {
-  display: flex;
-  overflow-x: scroll;
-  position: relative;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
-
-.slide:nth-of-type(even) {
-  background-color: rgb(250, 246, 212);
-}
-
-.slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  width: 100%;
-  height: 400px;
-  scroll-snap-align: center;
-  margin-right: 0px;
-  box-sizing: border-box;
-  background: white;
-  transform-origin: center center;
-  transform: scale(1);
-}
-
-.slide__text {
-  font-size: 40px;
-  font-weight: bold;
-  font-family: sans-serif;
-}
-
-.slide a {
-  background: none;
-  border: none;
-}
-
-a.slide__prev,
-.slider::before {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  left: 5%;
-}
-
-a.slide__next,
-.slider::after {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  right: 5%;
-}
-
-.slider::before,
-.slider::after,
-.slide__prev,
-.slide__next {
-  position: absolute;
-  top: 48%;
-  width: 35px;
-  height: 35px;
-  border: solid black;
-  border-width: 0 4px 4px 0;
-  padding: 3px;
-  box-sizing: border-box;
-}
-
-.slider::before,
-.slider::after {
-  content: "";
-  z-index: 1;
-  background: none;
-  pointer-events: none;
-}
-
-.slider__nav {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
+/* Circular headshots (front side) */
+.profile {
   width: 200px;
-  margin-left: -100px;
-  text-align: center;
+  height: 200px;
+  border-radius: 999px; /* circle */
+  object-fit: cover;
 }
 
-.slider__navlink {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: black;
-  margin: 0 10px 0 10px;
+/* Rectangular/square graphics (back side) */
+.profile-rect {
+  width: 220px;   /* adjust size as needed */
+  height: 150px;  /* change to make it rectangular or equal for square */
+  border-radius: 8px;  /* small rounding, or set to 0 for sharp corners */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 12px auto;
 }
+/* Collage */
+.collage{display:grid;gap:1px;grid-template-columns:repeat(3,1fr)}
+.collage .tile{overflow:hidden;border-radius:10px;box-shadow:var(--shadow)}
+.collage img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);transition:transform .25s ease, filter .25s ease}
+.collage .tile:hover img{transform:scale(1.05)}
+.collage .tall{grid-row:span 2}
+.collage .wide{grid-column:span 2}
+@media(max-width:700px){.collage{grid-template-columns:1fr 1fr}.collage .wide{grid-column:span 2}}
 
-/* 🔑 Fix for image cropping */
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* use 'cover' if you want full-bleed look */
-  object-position: center;
-  border-radius: 20px; /* match the slider's rounded corners */
-}
+/* Connect list */
+.connect-list{list-style:none;padding-left:0;display:grid;gap:10px}
+.linktile{display:block;padding:12px 14px;border:1px solid var(--ring);border-radius:12px;background:#fff;text-decoration:none;color:inherit;font-weight:700}
+.linktile:hover{box-shadow:var(--shadow)}
+
+/* Board grid (4 x 2) */
+.board-grid{display:grid;gap:18px;grid-template-columns:repeat(1,1fr)}
+@media(min-width:700px){.board-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.board-grid{grid-template-columns:repeat(4,1fr)}}
+.avatar{width:120px;height:120px;border-radius:999px;object-fit:cover;margin:0 auto 10px auto}
+.role{color:var(--muted);margin-top:-6px}
+
+/* Flip card on hover (desktop) */
+.board-card{perspective:1000px}
+.card-inner{position:relative;transform-style:preserve-3d;border-radius:var(--radius)}
+.card-face{backface-visibility:hidden;border:1px solid var(--ring);border-radius:var(--radius);padding:18px;background:var(--surface);box-shadow:var(--shadow);min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.card-back{position:absolute;inset:0;transform:rotateY(180deg)}
+@media(hover:hover){.board-card:hover .card-inner{transform:rotateY(180deg);transition:transform .6s cubic-bezier(.2,.8,.2,1)}}
+
+/* Modal for mobile click */
+.modal{position:fixed;inset:0;display:none}
+.modal.open{display:block}
+.modal-backdrop{position:absolute;inset:0;background:rgba(2,6,23,.5)}
+.modal-dialog{position:relative;margin:5vh auto 0 auto;background:#fff;border-radius:16px;max-width:520px;padding:20px;box-shadow:var(--shadow)}
+.modal-close{position:absolute;top:8px;right:10px;font-size:24px;line-height:1;border:0;background:none;cursor:pointer}
+.modal-body h3{margin-top:0}
+.modal-body .avatar{margin-bottom:8px}
+.modal-body .role{margin-top:0}
+
+/* Resources */
+.resources-grid{align-items:stretch}
+.resource-card{display:flex;flex-direction:column;gap:10px;border:1px solid var(--ring);border-radius:14px;padding:14px;background:#fff;text-decoration:none;color:inherit;box-shadow:var(--shadow)}
+.resource-card:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(2,6,23,.12)}
+.resource-card img{width:64px;height:64px;object-fit:contain}
+
+/* Sponsorship tiers */
+.tiers h2{margin-top:0}
+
+/* Footer */
+.site-footer{border-top:1px solid var(--ring);background:rgba(255,255,255,.75);padding:18px 0}

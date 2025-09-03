@@ -1,14 +1,70 @@
-<header>
-    <div class="logo">
-      <!-- <img src="images/logos/ostem-logo2.png" alt="oSTEM logo" /> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>oSTEM @ UCSD — Sponsorship</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container flex between center-y">
+      <a class="brand" href="index.html"><img class="brand-mark" src="images/logos/ostemLogo2.png" alt="oSTEM UCSD" /><strong>oSTEM @ UCSD</strong></a>
+      <nav class="primary-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <ul id="nav-menu">
+          <li><a class="nav-home" href="index.html">Home</a></li>
+          <li><a class="nav-team" href="board.html">Our Team</a></li>
+          <li><a class="nav-events" href="events.html">Events</a></li>
+          <li><a class="nav-sponsor" aria-current="page" href="sponsorship.html">Sponsorship</a></li>
+          <li><a class="nav-resources" href="resources.html">Resources</a></li>
+          <li><a class="nav-contact" href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="board.html">OUR TEAM</a></li>
-        <li><a href="events.html">EVENTS</a></li>
-        <li><a href="sponsorship.html">SPONSORSHIP</a></li>
-        <li><a href="resources.html">RESOURCES</a></li>
-      </ul>
-    </nav>
   </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Partner with oSTEM @ UCSD</h1>
+      <p class="lead">Support our community through one of our sponsorship packages:</p>
+      <div class="grid three cards tiers">
+        <article class="card">
+          <h2>Bronze</h2>
+          <p class="muted">$250+</p>
+          <ul>
+            <li>Logo on website</li>
+            <li>1 job post in Discord</li>
+            <li>1 event shout‑out</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Silver</h2>
+          <p class="muted">$750+</p>
+          <ul>
+            <li>Everything in Bronze</li>
+            <li>Booth at showcase</li>
+            <li>Resume book access</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Gold</h2>
+          <p class="muted">$1500+</p>
+          <ul>
+            <li>Everything in Silver</li>
+            <li>Custom workshop</li>
+            <li>Featured partner banner</li>
+          </ul>
+        </article>
+      </div>
+      <p style="margin-top:16px"><a class="btn btn-primary" href="#" target="_blank" rel="noopener">Become a Sponsor</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container flex between center-y"><p>© <span id="year"></span> oSTEM @ UCSD</p><p class="muted">Built with ♥ by the Web Team</p></div>
+  </footer>
+</body>
+</html>
+

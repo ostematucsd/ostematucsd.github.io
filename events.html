@@ -1,89 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <header>
-        <div class="logo">
-          <!-- <img src="images/logos/ostem-logo2.png" alt="oSTEM logo" /> -->
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="board.html">OUR TEAM</a></li>
-            <li><a href="events.html">EVENTS</a></li>
-            <li><a href="sponsorship.html">SPONSORSHIP</a></li>
-            <li><a href="resources.html">RESOURCES</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-    <meta charset="UTF-8">
-    <title>Newsletter Signup & Events</title>
-    <!-- Mailchimp Form Stylesheet -->
-    <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-        #mc_embed_signup {
-            background: #fff;
-            clear: left;
-            font: 14px Helvetica, Arial, sans-serif;
-            width: 600px;
-        }
-        /* Add your own Mailchimp form style overrides here if needed */
-    </style>
-    <style>
-        body > h3 {
-            display: block !important;
-            list-style-type: none !important;
-            margin-left: 0 !important;
-        }
-    </style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>oSTEM @ UCSD — Events</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <h3>Stay in the Loop and Join Our Weekly Newsletter!</h3>
+  <header class="site-header">
+    <div class="container flex between center-y">
+      <a class="brand" href="index.html"><img class="brand-mark" src="images/logos/ostemLogo2.png" alt="oSTEM UCSD" /><strong>oSTEM @ UCSD</strong></a>
+      <nav class="primary-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <ul id="nav-menu">
+          <li><a class="nav-home" href="index.html">Home</a></li>
+          <li><a class="nav-team" href="board.html">Our Team</a></li>
+          <li><a class="nav-events" aria-current="page" href="events.html">Events</a></li>
+          <li><a class="nav-sponsor" href="sponsorship.html">Sponsorship</a></li>
+          <li><a class="nav-resources" href="resources.html">Resources</a></li>
+          <li><a class="nav-contact" href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Mailchimp Signup Form -->
-    <div id="mc_embed_shell">
-        <div id="mc_embed_signup">
-            <form action="https://facebook.us17.list-manage.com/subscribe/post?u=84fe1a4b4df5e591269e35a3a&amp;id=cb5ea84c2b&amp;f_id=00b7eae3f0"
-                  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                  class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-                    <h2>Subscribe</h2>
-                    <div class="indicates-required">
-                        <span class="asterisk">*</span> indicates required
-                    </div>
-                    <div class="mc-field-group">
-                        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
-                        <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
-                    </div>
+  <main class="section">
+    <div class="container">
+      <h1>Come join us at our upcoming events:</h1>
+      <p class="lead">See our full calendar on Google Calendar.</p>
+      <p><a class="btn btn-primary" href="https://calendar.google.com" target="_blank" rel="noopener">Open Calendar ↗</a></p>
 
-                    <div id="mce-responses" class="clear foot">
-                        <div class="response" id="mce-error-response" style="display: none;"></div>
-                        <div class="response" id="mce-success-response" style="display: none;"></div>
-                    </div>
+      <div class="card" style="margin-top:24px">
+        <h2>Newsletter</h2>
+        <p>Want reminders in your inbox?</p>
+        <p><a class="btn" href="#" target="_blank" rel="noopener">Join our Newsletter</a></p>
+      </div>
+    </div>
+  </main>
 
-                    <!-- Hidden anti-bot field -->
-                    <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                        <input type="text" name="b_84fe1a4b4df5e591269e35a3a_cb5ea84c2b" tabindex="-1" value="">
-                    </div>
+  <footer class="site-footer">
+    <div class="container flex between center-y"><p>© <span id="year"></span> oSTEM @ UCSD</p></div>
+  </footer>
+</body>
+</html>
 
-                    <div class="optionalParent">
-                        <div class="clear foot">
-                            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                            <p style="margin: 0 auto;">
-                                <a href="http://eepurl.com/i_tuaU" title="Mailchimp - email marketing made easy and fun">
-                                    <span style="display: inline-block; background-color: transparent; border-radius: 4px;">
-                                        <img class="refferal_badge"
-                                             src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
-                                             alt="Intuit Mailchimp"
-                                             style="width: 220px; height: 40px; display: flex; padding: 2px 0; justify-content: center; align-items: center;">
-                                    </span>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <!-- Mailchimp validation script -->
-        <script type="text/javascript" src="//s3.amazonaws.com

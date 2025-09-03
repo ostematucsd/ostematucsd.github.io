@@ -1,14 +1,58 @@
-<header>
-    <div class="logo">
-      <!-- <img src="images/logos/ostem-logo2.png" alt="oSTEM logo" /> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>oSTEM @ UCSD — Resources</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container flex between center-y">
+      <a class="brand" href="index.html"><img class="brand-mark" src="images/logos/ostemLogo2.png" alt="oSTEM UCSD" /><strong>oSTEM @ UCSD</strong></a>
+      <nav class="primary-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <ul id="nav-menu">
+          <li><a class="nav-home" href="index.html">Home</a></li>
+          <li><a class="nav-team" href="board.html">Our Team</a></li>
+          <li><a class="nav-events" href="events.html">Events</a></li>
+          <li><a class="nav-sponsor" href="sponsorship.html">Sponsorship</a></li>
+          <li><a class="nav-resources" aria-current="page" href="resources.html">Resources</a></li>
+          <li><a class="nav-contact" href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="board.html">OUR TEAM</a></li>
-        <li><a href="events.html">EVENTS</a></li>
-        <li><a href="sponsorship.html">SPONSORSHIP</a></li>
-        <li><a href="resources.html">RESOURCES</a></li>
-      </ul>
-    </nav>
   </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Campus & Community Resources</h1>
+      <div class="grid three resources-grid">
+        <!-- Each card is fully clickable; replace logo and href -->
+        <a class="resource-card" href="#" target="_blank" rel="noopener">
+          <img src="images/logos/ucsd-logo.png" alt="UCSD Resource" />
+          <h3>UCSD CAPS</h3>
+          <p class="muted">Counseling & Psychological Services</p>
+        </a>
+        <a class="resource-card" href="#" target="_blank" rel="noopener">
+          <img src="images/logos/center4inclusion.png" alt="Center for Inclusion" />
+          <h3>Center for Inclusion</h3>
+          <p class="muted">Support for diverse identities</p>
+        </a>
+        <a class="resource-card" href="#" target="_blank" rel="noopener">
+          <img src="images/logos/ostem-national.png" alt="oSTEM National" />
+          <h3>oSTEM National</h3>
+          <p class="muted">National org & conference</p>
+        </a>
+        <!-- Add more as needed -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container flex between center-y"><p>© <span id="year"></span> oSTEM @ UCSD</p></div>
+  </footer>
+</body>
+</html>
+

@@ -1,93 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>oSTEM @ UCSD — Our Team</title>
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-
 </head>
-
 <body>
-  <header>
-    <div class="logo">
-      <!-- <img src="images/logos/ostem-logo2.png" alt="oSTEM logo" /> -->
+  <!-- Shared header -->
+  <header class="site-header">
+    <div class="container flex between center-y">
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="images/logos/ostemLogo2.png" alt="oSTEM UCSD" />
+        <strong>oSTEM @ UCSD</strong>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <ul id="nav-menu">
+          <li><a class="nav-home" href="index.html">Home</a></li>
+          <li><a class="nav-team" aria-current="page" href="board.html">Our Team</a></li>
+          <li><a class="nav-events" href="events.html">Events</a></li>
+          <li><a class="nav-sponsor" href="sponsorship.html">Sponsorship</a></li>
+          <li><a class="nav-resources" href="resources.html">Resources</a></li>
+          <li><a class="nav-contact" href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="board.html">OUR TEAM</a></li>
-        <li><a href="events.html">EVENTS</a></li>
-        <li><a href="sponsorship.html">SPONSORSHIP</a></li>
-        <li><a href="resources.html">RESOURCES</a></li>
-      </ul>
-    </nav>
   </header>
 
-  <main>
-    <section class="board">
-      <h1>Meet Our Team</h1>
-      <div class="team-grid">
+  <main class="section">
+    <div class="container">
+      <h1>Board 2024–25</h1>
+      <div class="board-grid">
 
-        <!-- President -->
-        <div class="team-card">
-          <img src="images/boardPhotos/RoisinGross.jpg" alt="Roisin Gross">
-          <h3>Roisin Gross</h3>
-          <p>President</p>
-        </div>
+        <!--President-->
+        <!--front of card-->
+        <article class="board-card" data-name="Roisin Gross" data-role="President">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <img class="avatar" src="images/boardPhotos/RoisinGross.jpg" alt="Roisin Gross" />
+              <h3>Roisin Gross</h3>
+              <p class="role">President</p>
+            </div>
+            <!--back of card-->
+            <div class="card-face card-back">
+              <img class="profile-rect" src="images/boardPhotos/RoisinProfile.png" alt="Roisin Profile Info">
+              <div class="card-actions">
+                <a class="btn btn-small" href="mailto:isgross@ucsd.edu">Email</a>
+              </div>
+            </div>
+          </div>
+        </article>
 
-        <!-- Vice President Finance -->
-        <div class="team-card">
-          <img src="images/boardPhotos/JustinTopete.jpg" alt="John Smith">
-          <h3>Justin Topete</h3>
-          <p>Vice President Finance</p>
-        </div>
+        <!--VP Finance-->
+        <!--front of card-->
+        <article class="board-card" data-name="Justin Topete" data-role="VP Finance">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <img class="avatar" src="images/boardPhotos/JustinTopete.jpg" alt="Justin Topete" />
+              <h3>Justin Topete</h3>
+              <p class="role">Vice President Finance</p>
+            </div>
+            <!--back of card-->
+            <div class="card-face card-back">
+              <img class="profile-rect" src="images/boardPhotos/JustinProfile.png" alt="Justin Profile Info">
+              <div class="card-actions">
+                <a class="btn btn-small" href="mailto:jutopete@ucsd.edu">Email</a>
+              </div>
+            </div>
+          </div>
+        </article>
 
-        <!-- Vice President External -->
-        <div class="team-card">
-          <img src="images/boardPhotos/RoisinGross.jpg" alt="Alex Kim">
-          <h3>New Person</h3>
-          <p>New Person</p>
-        </div>
+        <!--Secreatary-->        
+        <!--front of card-->
+        <article class="board-card" data-name="Bode Briseno" data-role="Secretary">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <img class="avatar" src="images/boardPhotos/BodeBriseno.jpeg" alt="Bode Briseno" />
+              <h3>Bode Briseno</h3>
+              <p class="role">Secretary</p>
+            </div>
+            <!--back of card-->
+            <div class="card-face card-back">
+              <img class="profile-rect" src="images/boardPhotos/BodeProfile.png" alt="Bode Profile Info">
+              <div class="card-actions">
+                <a class="btn btn-small" href="mailto:bobriseno@ucsd.edu">Email</a>
+              </div>
+            </div>
+          </div>
+        </article>
 
-        <!-- Vice President Internal -->
-        <div class="team-card">
-          <img src="images/boardPhotos/SelenaWang.jpg" alt="Selena Wang">
-          <h3>Selena Wang</h3>
-          <p>Vice President Internal</p>
-        </div>
+        <!--Social Chair-->
+        <!--front of card-->
+        <article class="board-card" data-name="Beatrice Fung" data-role="Social Chair">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <img class="avatar" src="images/boardPhotos/BeatriceFung.jpg" alt="Beatrice Fung" />
+              <h3>Beatrice Fung</h3>
+              <p class="role">Social Chair</p>
+            </div>
+            <!--back of card-->
+            <div class="card-face card-back">
+              <img class="profile-rect" src="images/boardPhotos/BeatriceProfile.png" alt="Beatrice Profile Info">
+              <div class="card-actions">
+                <a class="btn btn-small" href="mailto:befung@ucsd.edu">Email</a>
+              </div>
+            </div>
+          </div>
+        </article>
 
-        <!-- Secratary -->
-        <div class="team-card">
-          <img src="images/boardPhotos/BodeBrisino.jpeg" alt="Bode Brisino">
-          <h3>Bode Brisino</h3>
-          <p>Secretary</p>
-        </div>
+        <!--Publicity Chair-->        
+        <!--front of card-->
+        <article class="board-card" data-name="Lydia Chen" data-role="Publicity Chair">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <img class="avatar" src="images/boardPhotos/LydiaChen.JPG" alt="Lydia Chen" />
+              <h3>Lydia Chen</h3>
+              <p class="role">Publicity Chair</p>
+            </div>
+            <!--back of card-->
+            <div class="card-face card-back">
+              <img class="profile-rect" src="images/boardPhotos/LydiaProfile.png" alt="Lydia Profile Info">
+              <div class="card-actions">
+                <a class="btn btn-small" href="mailto:lyc004@ucsd.edu">Email</a>
+              </div>
+            </div>
+          </div>
+        </article>
 
-        <!-- Publicity Chair -->
-        <div class="team-card">
-          <img src="images/boardPhotos/LydiaChen.JPG" alt="Lydia Chen">
-          <h3>Lydia Chen </h3>
-          <p>Publicity Chair</p>
-        </div>
+        <!--Webmaster-->        
+        <!--front of card-->
+        <article class="board-card" data-name="Sameera" data-role="Webmaster">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <img class="avatar" src="images/boardPhotos/SameeraAgarwala.jpg" alt="Sameera" />
+              <h3>Sameera</h3>
+              <p class="role">Webmaster</p>
+            </div>
+            <!--back of card-->
+            <div class="card-face card-back">
+              <img class="profile-rect" src="images/boardPhotos/SameeraProfile.png" alt="Sameera Profile Info">
+              <div class="card-actions">
+                <a class="btn btn-small" href="mailto:sagarwala@ucsd.edu">Email</a>
+              </div>
+            </div>
+          </div>
+        </article>
 
-        <!-- Social Chair -->
-        <div class="team-card">
-          <img src="images/boardPhotos/BeatriceFung.jpg" alt="Beatrice Fung">
-          <h3>Beatrice Fung</h3>
-          <p>Social Chair</p>
-        </div>
+      
+        <!--VP Internal-->
+        <!--front of card-->
+        <!--remove me
+        <article class="board-card" data-name="VP INT" data-role="VP Internal">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <img class="avatar" src="images/boardPhotos/VPINT.jpg" alt="VP INT NAME" />
+              <h3>VP INT NAME</h3>
+              <p class="role">Vice President Internal</p>
+            </div>
+          remove me --> 
+            <!--back of card-->
+            <!--remove me
+            <div class="card-face card-back">
+              <img class="profile-rect" src="images/boardPhotos/VPINT.png" alt="VP INT Info">
+              <div class="card-actions">
+                <a class="btn btn-small" href="mailto:VPINT@ucsd.edu">Email</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        remove me --> 
 
-        <!-- Webmaster -->
-        <div class="team-card">
-          <img src="images/boardPhotos/SameeraAgarwala.jpg" alt="Sameera Agarwala">
-          <h3>Sameera Agarwala</h3>
-          <p>Webmaster</p>
-        </div>
+        <!--VP External-->
+        <!--front of card-->
+        <!--remove me
+        <article class="board-card" data-name="VP EXT" data-role="VP External">
+          <div class="card-inner">
+            <div class="card-face card-front">
+              <img class="avatar" src="images/boardPhotos/VPEXT.jpg" alt="VP EXT NAME" />
+              <h3>VP EXT NAME</h3>
+              <p class="role">Vice President External</p>
+            </div>
+          -->
+            <!--back of card-->
+            <!--remove me
+            <div class="card-face card-back">
+              <img class="profile-rect" src="images/boardPhotos/VPEXT.png" alt="VP EXT INFO">
+              <div class="card-actions">
+                <a class="btn btn-small" href="mailto:VPEXT@ucsd.edu">Email</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      -->
+    
+        
       </div>
-    </section>
+    </div>
   </main>
 
-  <footer>
-    <p>Connect with us:</p>
-    <a href="https://linktr.ee/yourclub" target="_blank"><img src="assets/logos/linktree.png" alt="Linktree" /></a>
-    <a href="https://discord.gg/yourclub" target="_blank"><img src="assets/logos/discord.png" alt="Discord" /></a>
-    <a href="https://instagram.com/yourclub" target="_blank"><img src="assets/logos/instagram.png" alt="Instagram" /></a>
+  <!-- Modal for mobile click -->
+  <div class="modal" id="profileModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" aria-label="Close" data-close>×</button>
+      <div class="modal-body"><!-- filled by script.js --></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container flex between center-y">
+      <p>© <span id="year"></span> oSTEM @ UCSD</p>
+    </div>
   </footer>
 </body>
+</html>
+

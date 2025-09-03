@@ -2,77 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>oSTEM @ UCSD</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>oSTEM @ UCSD — Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <!--mailchimp style sheet-->
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
   <script defer src="script.js"></script>
 </head>
-
 <body>
-  <header>
-    <nav aria-label="Primary">
-      <ul>
-        <li><img id="headerLogo" src="images/logos/ostemLogo2.png" alt="oSTEM @ UCSD logo" /></li>
-        <li><a href="index.html" class="nav-home">Home</a></li>
-        <li><a href="board.html" class="nav-team">Our Team</a></li>
-        <li><a href="events.html" class="nav-events">Events</a></li>
-        <li><a href="sponsorship.html" class="nav-sponsor">Sponsorship</a></li>
-        <li><a href="resources.html" class="nav-resources">Resources</a></li>
-        <li><a href="contact.html" class="nav-contact">Contact Us</a></li>
-      </ul>
-    </nav>
-      </header>
+  <header class="site-header">
+    <div class="container flex between center-y">
+      <a class="brand" href="index.html" aria-label="Home">
+        <img class="brand-mark" src="images/logos/ostemLogo2.png" alt="oSTEM UCSD" />
+        <strong>oSTEM @ UCSD</strong>
+      </a>
+      <nav class="primary-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul id="nav-menu">
+          <li><a class="nav-home" href="index.html">Home</a></li>
+          <li><a class="nav-team" href="board.html">Our Team</a></li>
+          <li><a class="nav-events" href="events.html">Events</a></li>
+          <li><a class="nav-sponsor" href="sponsorship.html">Sponsorship</a></li>
+          <li><a class="nav-resources" href="resources.html">Resources</a></li>
+          <li><a class="nav-contact" href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <div class="slider-container">
-    <div class="slider">
-      <div class="slides">
-        <div id="slides__1" class="slide">
-          <img src="images/other/oSTEMConf2019.jpg" alt="oSTEM Conference 2019">
-          <a class="slide__prev" href="#slides__4" title="Prev"></a>
-          <a class="slide__next" href="#slides__2" title="Next"></a>
+  <!-- Hero / Collage -->
+  <section class="hero">
+    <div class="container">
+      <div class="grid two hero-grid">
+        <div class="hero-copy">
+          <h1>Out in STEM @ UC San Diego</h1>
+          <p class="tagline">Community • Mentorship • Professional Growth</p>
+          <p class="lead">At oSTEM we are dedicated to fostering a supportive and inclusive community for LGBTQ+ individuals in STEM. Through mentorship, professional development, and social events, we empower students to thrive academically, professionally, and personally. Join us in building a future where diversety drives innovation!</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="events.html">See Events</a>
+            <a class="btn" href="resources.html">Browse Resources</a>
+          </div>
         </div>
-        <div id="slides__2" class="slide">
-          <img src="images/other/nationalConfBoard.JPG" alt="National Conference Board">
-          <a class="slide__prev" href="#slides__1" title="Prev"></a>
-          <a class="slide__next" href="#slides__3" title="Next"></a>
+        <div class="collage" aria-label="Board photo collage">
+          <figure class="tile"><img src="images/other/oSTEMConf2019.jpg" alt="oSTEM conference"></figure>
+          <figure class="tile tall"><img src="images/other/nationalConfBoard.JPG" alt="oSTEM board at conference"></figure>
+          <figure class="tile"><img src="images/other/bodeOstemConf.JPG" alt="oSTEM members national confrence"></figure>
+          <figure class="tile wide"><img src="images/other/ostemConfGroupPic.JPG" alt="Group photo"></figure>
+          <figure class="tile"><img src="images/other/oSTEMConf2019.jpg" alt="Workshop"></figure>
+          <figure class="tile"><img src="images/other/nationalConfBoard.JPG" alt="Social"></figure>
         </div>
-        <div id="slides__3" class="slide">
-          <img src="images/other/oSTEMConf2019.jpg" alt="oSTEM Conference 2019">
-          <a class="slide__prev" href="#slides__2" title="Prev"></a>
-          <a class="slide__next" href="#slides__4" title="Next"></a>
-        </div>
-        <div id="slides__4" class="slide">
-          <img src="images/other/nationalConfBoard.JPG" alt="National Conference Board">
-          <a class="slide__prev" href="#slides__3" title="Prev"></a>
-          <a class="slide__next" href="#slides__1" title="Next"></a>
-        </div>
-      </div>
-      <div class="slider__nav">
-        <a class="slider__navlink" href="#slides__1"></a>
-        <a class="slider__navlink" href="#slides__2"></a>
-        <a class="slider__navlink" href="#slides__3"></a>
-        <a class="slider__navlink" href="#slides__4"></a>
       </div>
     </div>
-  </div>
-    
+  </section>
 
   <main>
-    <section class="mission">
-      <h1>Our Mission</h1>
-      <p>At oSTEM we are dedicated to fostering a supportive and inclusive community for LGBTQ+ individuals in STEM. Through mentorship, professional development, and social events, we empower students to thrive academically, professionally, and personally. Join us in building a future where diversety drives innovation!</p>
+    <section class="section">
+      <div class="container grid two about-grid">
+        <article class="card">
+          <h2>Our Mission</h2>
+          <p>At oSTEM, we are dedicated to fostering a supportive and inclusive community for LGBTQ+ individuals in STEM. Through mentorship, professional development, and social events, we empower students to thrive academically, professionally, and personally.</p>
+        </article>
+        <article class="card">
+          <h2>Diversity Statement</h2>
+          <p>In accordance with applicable federal and state law and University policy, oSTEM @ UC San Diego does not discriminate on the basis of race, color, national origin, religion, sex, disability, and/or other protected categories. All enrolled students are encouraged to participate in our events and activities.</p>
+        </article>
+      </div>
     </section>
 
-    <section class="diversityStatement">
-        <p>In accordance with applicable Fedral and State law and University policy, Out in STEM @ UC San Diego does not discriminate, or grant preferences, on the basis of race, color, national origin, religion, sex, disability, and/or other protected categories. All enrolled students are encouraged to participate in oSTEM @ UC San Diego's events and activities. </p>
+    <section id="contact" class="section section-alt">
+      <div class="container grid two">
+        <div>
+          <h2>Connect with us!</h2>
+          <ul class="connect-list">
+            <li><a class="linktile" href="https://linktr.ee/ostemucsd" target="_blank" rel="noopener">Linktree ↗</a></li>
+            <li><a class="linktile" href="https://discord.gg/X54tv2FAdS" target="_blank" rel="noopener">Discord ↗</a></li>
+            <li><a class="linktile" href="https://www.instagram.com/ostematucsd/" target="_blank" rel="noopener">Instagram ↗</a></li>
+            <li><a class="linktile" href="mailto:ostem@ucsd.edu">Email us</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <!-- Mailchimp Signup Form -->
+          <div id="mc_embed_signup">
+            <form action="https://facebook.us17.list-manage.com/subscribe/post?u=84fe1a4b4df5e591269e35a3a&amp;id=cb5ea84c2b&amp;f_id=00b7eae3f0"
+                  method="post" target="_blank" class="validate">
+              <h3>Subscribe to our Newsletter</h3>
+              <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
+              </div>
+              <div aria-hidden="true" style="position:absolute;left:-5000px;">
+                <input type="text" name="b_84fe1a4b4df5e591269e35a3a_cb5ea84c2b" tabindex="-1" value="">
+              </div>
+              <div class="optionalParent">
+                <div class="clear foot">
+                  <input type="submit" name="subscribe" class="button btn btn--primary" value="Subscribe">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
+    
+
   </main>
 
-  <footer>
-    <p>Connect with us:</p>
-    <a href="https://linktr.ee/ostemucsd" target="Linktree"><img src="images/logos/linktree.png" alt="Linktree" /></a>
-    <a href="https://discord.gg/yourclub" target="Discord"><img src="images/logos/discordLogo.png" alt="Discord" /></a>
-    <a href="https://www.instagram.com/ostematucsd/" target="Instagram"><img src="images/logos/instaLogo.jpeg" alt="Instagram" /></a>
+  <footer class="site-footer">
+    <div class="container flex between center-y">
+      <p>© <span id="year"></span> oSTEM @ UCSD</p>
+    </div>
   </footer>
+
+  <!--Validation script for mailchimp-->
+  <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script>
+  (function($) {window.fnames = new Array(); window.ftypes = new Array();
+    fnames[0]='EMAIL';ftypes[0]='email';
+  }(jQuery));var $mcj = jQuery.noConflict(true);
+</script>
+
+
 </body>
 </html>
