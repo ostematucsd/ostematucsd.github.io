@@ -10,17 +10,52 @@
 
 <body>
   <header>
-    <nav>
+    <nav aria-label="Primary">
       <ul>
-        <li> <img id = headerLogo src="images/logos/ostemLogo2.png" alt="oSTEM logo" /> </li>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="board.html">OUR TEAM</a></li>
-        <li><a href="events.html">EVENTS</a></li>
-        <li><a href="sponsorship.html">SPONSORSHIP</a></li>
-        <li><a href="resources.html">RESOURCES</a></li>
+        <li><img id="headerLogo" src="images/logos/ostemLogo2.png" alt="oSTEM @ UCSD logo" /></li>
+        <li><a href="index.html" class="nav-home">Home</a></li>
+        <li><a href="board.html" class="nav-team">Our Team</a></li>
+        <li><a href="events.html" class="nav-events">Events</a></li>
+        <li><a href="sponsorship.html" class="nav-sponsor">Sponsorship</a></li>
+        <li><a href="resources.html" class="nav-resources">Resources</a></li>
+        <li><a href="contact.html" class="nav-contact">Contact Us</a></li>
       </ul>
     </nav>
-  </header>
+      </header>
+
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slides">
+        <div id="slides__1" class="slide">
+          <img src="images/other/oSTEMConf2019.jpg" alt="oSTEM Conference 2019">
+          <a class="slide__prev" href="#slides__4" title="Prev"></a>
+          <a class="slide__next" href="#slides__2" title="Next"></a>
+        </div>
+        <div id="slides__2" class="slide">
+          <img src="images/other/nationalConfBoard.JPG" alt="National Conference Board">
+          <a class="slide__prev" href="#slides__1" title="Prev"></a>
+          <a class="slide__next" href="#slides__3" title="Next"></a>
+        </div>
+        <div id="slides__3" class="slide">
+          <img src="images/other/oSTEMConf2019.jpg" alt="oSTEM Conference 2019">
+          <a class="slide__prev" href="#slides__2" title="Prev"></a>
+          <a class="slide__next" href="#slides__4" title="Next"></a>
+        </div>
+        <div id="slides__4" class="slide">
+          <img src="images/other/nationalConfBoard.JPG" alt="National Conference Board">
+          <a class="slide__prev" href="#slides__3" title="Prev"></a>
+          <a class="slide__next" href="#slides__1" title="Next"></a>
+        </div>
+      </div>
+      <div class="slider__nav">
+        <a class="slider__navlink" href="#slides__1"></a>
+        <a class="slider__navlink" href="#slides__2"></a>
+        <a class="slider__navlink" href="#slides__3"></a>
+        <a class="slider__navlink" href="#slides__4"></a>
+      </div>
+    </div>
+  </div>
+    
 
   <main>
     <section class="mission">
