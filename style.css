@@ -148,6 +148,18 @@
 .modal-body .avatar{margin-bottom:8px}
 .modal-body .role{margin-top:0}
 
+/* Modal image sizing for board profiles */
+.modal-profile { text-align: center; }
+.modal-profile-img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+
 /* Resources */
 .resources-grid{align-items:stretch}
 .resource-card{display:flex;flex-direction:column;gap:10px;border:1px solid var(--ring);border-radius:14px;padding:14px;background:#fff;text-decoration:none;color:inherit;box-shadow:var(--shadow)}
