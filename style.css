@@ -82,14 +82,40 @@
   display: block;
   margin: 0 auto 12px auto;
 }
-/* Collage */
-.collage{display:grid;gap:1px;grid-template-columns:repeat(3,1fr)}
-.collage .tile{overflow:hidden;border-radius:10px;box-shadow:var(--shadow)}
-.collage img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1);transition:transform .25s ease, filter .25s ease}
-.collage .tile:hover img{transform:scale(1.05)}
-.collage .tall{grid-row:span 2}
-.collage .wide{grid-column:span 2}
-@media(max-width:700px){.collage{grid-template-columns:1fr 1fr}.collage .wide{grid-column:span 2}}
+/* Masonry-style collage */
+.collage {
+  column-count: 3;       /* how many columns */
+  column-gap: 8px;       /* space between columns */
+  margin: 0 auto;
+}
+
+.collage .tile {
+  display: inline-block; /* allows multi-columns to flow */
+  margin: 0 0 8px;       /* vertical spacing between images */
+  width: 100%;
+  break-inside: avoid;   /* prevents images from breaking awkwardly */
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
+.collage img {
+  display: block;
+  width: 100%;
+  height: auto;          /* auto so each image keeps its proportions */
+  transition: transform .25s ease;
+}
+
+.collage .tile:hover img {
+  transform: scale(1.05);
+}
+
+/* Mobile: reduce to 2 cols */
+@media (max-width: 700px) {
+  .collage {
+    column-count: 2;
+  }
+}
 
 /* Connect list */
 .connect-list{list-style:none;padding-left:0;display:grid;gap:10px}

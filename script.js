@@ -56,7 +56,6 @@
         <p>${bio}</p>
         <div class="flex" style="gap:8px">
           <a class="btn btn-small" href="mailto:${email}">Email</a>
-          <a class="btn btn-small" href="${linkedin}" target="_blank" rel="noopener">LinkedIn</a>
         </div>`;
       openModal(html);
     });
