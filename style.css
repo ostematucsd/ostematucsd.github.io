@@ -54,7 +54,7 @@
 /* Buttons */
 .btn{display:inline-block;padding:10px 14px;border-radius:999px;border:1px solid var(--ring);background:#fff;font-weight:800;color:var(--text);text-decoration:none}
 .btn:hover{box-shadow:var(--shadow)}
-.btn-primary{background:var(--accent);border-color:var(--accent);color:#000}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:#000;text-align:center;justify-content:center}
 .btn-primary:hover{background:var(--accent-600);border-color:var(--accent-600)}
 .btn-small{padding:8px 10px;font-size:14px}
 
