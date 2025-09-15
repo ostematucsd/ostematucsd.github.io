@@ -4,9 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>oSTEM @ UCSD — Home</title>
-  <!--mailchimp style sheet-->
+
+  <!-- Mailchimp stylesheet (keep this before your site CSS or override with scoped selectors) -->
   <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+
+  <!-- Your site CSS -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional: small tweaks just for the embedded form -->
+  <style>
+    /* Keep the Mailchimp form at a tidy width and centered within your .container */
+    .mc-embed { max-width: 600px; margin: 0 auto; }
+    /* Ensure your site button styles apply cleanly */
+    #mc_embed_signup .button.btn.btn-primary { display: inline-block; }
+  </style>
+
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -51,11 +63,9 @@
           <figure class="tile"><img src="images/other/bodeOstemConf.JPG" alt="oSTEM members national confrence"></figure>
           <figure class="tile wide"><img src="images/other/ostemConfGroupPic.JPG" alt="Group photo"></figure>
           <figure class="tile"><img src="images/other/ostemTieDyeSocial.png" alt="TyeDye Social"></figure>
-          <figure class="title tall"><img src="images/other/prideFlagAIT.jpg" alt="All inclusive pride flag"></figure>
+          <figure class="tile tall"><img src="images/other/prideFlagAIT.jpg" alt="All inclusive pride flag"></figure>
           <figure class="tile"><img src="images/other/ostemRockclimbing.png" alt="Rock climbing social"></figure>
           <figure class="tile"><img src="images/other/CelebratePrideBackground.jpg" alt="Celebrate Pride Background"></figure>
-        
-
         </div>
       </div>
     </div>
@@ -75,69 +85,89 @@
       </div>
     </section>
 
+    <!-- Contact anchor section (optional content) -->
     <section id="contact" class="section section-alt">
-      
-      <section id="resources" class="section section--alt">
-        <div class="container">
-          <h2 style="margin-bottom: 1.5rem;">Connect with us below:</h2>
-      
-          <div class="grid three cards">
-            <a href="https://discord.gg/X54tv2FAdS" class="card resource-card discord" target="_blank" rel="noopener">
-              <img src="images/logos/discordLogoWhite.png" alt="Discord" class="resource-logo">
-            </a>
-      
-            <a href="https://linktr.ee/ostemucsd" class="card resource-card linktree" target="_blank" rel="noopener">
-              <img src="images/logos/LinktreeLogo.png" alt="Linktree" class="resource-logo">
-            </a>
-      
-            <a href="https://www.instagram.com/ostematucsd/" class="card resource-card instagram" target="_blank" rel="noopener">
-              <img src="images/logos/InstagramLogo.png" alt="Instagram" class="resource-logo">
-            </a>
-          </div>
+      <!-- Add contact content here if desired -->
+    </section>
+
+    <section id="resources" class="section section--alt">
+      <div class="container">
+        <h2 style="margin-bottom: 1.5rem;">Connect with us below:</h2>
+
+        <div class="grid three cards">
+          <a href="https://discord.gg/X54tv2FAdS" class="card resource-card discord" target="_blank" rel="noopener">
+            <img src="images/logos/discordLogoWhite.png" alt="Discord" class="resource-logo">
+          </a>
+
+          <a href="https://linktr.ee/ostemucsd" class="card resource-card linktree" target="_blank" rel="noopener">
+            <img src="images/logos/LinktreeLogo.png" alt="Linktree" class="resource-logo">
+          </a>
+
+          <a href="https://www.instagram.com/ostematucsd/" class="card resource-card instagram" target="_blank" rel="noopener">
+            <img src="images/logos/InstagramLogo.png" alt="Instagram" class="resource-logo">
+          </a>
         </div>
-      </section>
-      
-  <!-- Begin Mailchimp Signup Form -->
-  <section class="section">
-    <div class="container">
-      <div id="mc_embed_signup" class="mc-embed">
-        <form action="https://facebook.us17.list-manage.com/subscribe/post?u=84fe1a4b4df5e591269e35a3a&amp;id=cb5ea84c2b&amp;f_id=00b7eae3f0"
-              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-              class="validate" target="_blank">
-          <div id="mc_embed_signup_scroll">
-            <h2>Join our mailing list</h2>
-            <div class="mc-field-group">
-              <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
-              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
-            </div>
-
-            <!-- bot trap -->
-            <div aria-hidden="true" style="position:absolute; left:-5000px;">
-              <input type="text" name="b_84fe1a4b4df5e591269e35a3a_cb5ea84c2b" tabindex="-1" value="">
-            </div>
-
-            <div class="optionalParent">
-              <div class="clear foot">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe"
-                       class="button btn btn-primary" value="Subscribe">
-              </div>
-            </div>
-
-            <!-- Mailchimp branding -->
-            <p class="brandingLogo" style="margin-top:12px;">
-              <a href="https://mailchimp.com" target="_blank" rel="noopener" aria-label="Mailchimp">
-                <img src="https://cdn-images.mailchimp.com/monkey_rewards/logo-mailchimp-freddie-outline.svg"
-                     alt="Mailchimp" width="110" height="24" loading="lazy">
-              </a>
-            </p>
-          </div>
-        </form>
       </div>
-    </div>
-  </section>
-  <!-- End Mailchimp Signup Form -->
-</main>
+    </section>
 
+    <!-- Begin Mailchimp Signup Form -->
+    <section class="section">
+      <div class="container">
+        <div id="mc_embed_shell">
+          <div id="mc_embed_signup" class="mc-embed">
+            <form action="https://facebook.us17.list-manage.com/subscribe/post?u=84fe1a4b4df5e591269e35a3a&amp;id=cb5ea84c2b&amp;f_id=00b7eae3f0"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  class="validate"
+                  target="_blank">
+              <div id="mc_embed_signup_scroll">
+                <h2>Subscribe</h2>
+                <div class="indicates-required">
+                  <span class="asterisk">*</span> indicates required
+                </div>
+
+                <div class="mc-field-group">
+                  <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                  <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                </div>
+
+                <div id="mce-responses" class="clear foot">
+                  <div class="response" id="mce-error-response" style="display:none;"></div>
+                  <div class="response" id="mce-success-response" style="display:none;"></div>
+                </div>
+
+                <!-- Bot trap (do not remove) -->
+                <div aria-hidden="true" style="position:absolute; left:-5000px;">
+                  <input type="text" name="b_84fe1a4b4df5e591269e35a3a_cb5ea84c2b" tabindex="-1" value="">
+                </div>
+
+                <div class="optionalParent">
+                  <div class="clear foot">
+                    <input type="submit" name="subscribe" id="mc-embedded-subscribe"
+                           class="button btn btn-primary" value="Subscribe">
+
+                    <!-- Intuit Mailchimp referral badge (same as your original) -->
+                    <p style="margin:12px auto 0;">
+                      <a href="http://eepurl.com/i_tuaU" title="Mailchimp - email marketing made easy and fun" target="_blank" rel="noopener">
+                        <span style="display:inline-block; background-color:transparent; border-radius:4px;">
+                          <img class="refferal_badge"
+                               src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                               alt="Intuit Mailchimp"
+                               style="width:220px; height:40px; display:flex; padding:2px 0; justify-content:center; align-items:center;">
+                        </span>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div> <!-- /#mc_embed_signup -->
+        </div> <!-- /#mc_embed_shell -->
+      </div>
+    </section>
+    <!-- End Mailchimp Signup Form -->
+  </main>
 
   <footer class="site-footer">
     <div class="container flex between center-y">
@@ -145,15 +175,18 @@
     </div>
   </footer>
 
-  <!--Validation script for mailchimp-->
+  <!-- Mailchimp validation script -->
   <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-<script>
-  (function($) {window.fnames = new Array(); window.ftypes = new Array();
-    fnames[0]='EMAIL';ftypes[0]='email';
-  }(jQuery));var $mcj = jQuery.noConflict(true);
-</script>
-
-
-
+  <script>
+    (function($) {
+      window.fnames = []; window.ftypes = [];
+      fnames[0]='EMAIL'; ftypes[0]='email';
+      // Keep these if you later add fields:
+      fnames[1]='FNAME'; ftypes[1]='text';
+      fnames[2]='LNAME'; ftypes[2]='text';
+      fnames[3]='PID';   ftypes[3]='text';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+  </script>
 </body>
 </html>
