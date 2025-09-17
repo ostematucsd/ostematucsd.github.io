@@ -227,3 +227,12 @@
 #mc_embed_signup .button.btn.btn-primary { display: inline-block; }
 
 #mc_embed_signup .brandingLogo img { height: auto; max-width: 140px; opacity: 0.9; }
+
+.form-container {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0; /* adds breathing room above and below */
+}
+
