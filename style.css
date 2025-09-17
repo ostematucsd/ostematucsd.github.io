@@ -170,7 +170,7 @@
 .tiers h2{margin-top:0}
 
 /* Footer */
-.site-footer{border-top:20px solid var(--ring);background:rgba(255,255,255,.75);padding:18px 0}
+.site-footer{border-top:1px solid var(--ring);background:rgba(255,255,255,.75);padding:18px 0}
 
 
 /* Shared resource card styles */
